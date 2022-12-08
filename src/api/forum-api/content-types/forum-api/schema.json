@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "forum_apis",
+  "info": {
+    "singularName": "forum-api",
+    "pluralName": "forum-apis",
+    "displayName": "forum_api",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_forum": {
+      "type": "string"
+    },
+    "img_forum": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "body_forum": {
+      "type": "richtext"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "forum_apis"
+    },
+    "imSrcForumApi": {
+      "type": "string"
+    },
+    "cateForum": {
+      "type": "enumeration",
+      "enum": [
+        "A. อาหารไทย",
+        "B. อาหารยุโรป",
+        "C. อาหารญี่ปุ่น",
+        "D. อาหารจีน",
+        "E. อาหารอินเดีย"
+      ]
+    }
+  }
+}

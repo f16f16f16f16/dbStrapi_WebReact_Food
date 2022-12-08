@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "col_menu_webs",
+  "info": {
+    "singularName": "col-menu-web",
+    "pluralName": "col-menu-webs",
+    "displayName": "col_menu_web",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_menu_web": {
+      "type": "string"
+    },
+    "description_menu_web": {
+      "type": "string"
+    },
+    "img_menu_web": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Ingredients_menu_web": {
+      "type": "richtext"
+    },
+    "imSrc_menu_web": {
+      "type": "string"
+    },
+    "ingreRecipeJson_menu_web": {
+      "type": "json"
+    },
+    "recipe_menu_web": {
+      "type": "richtext"
+    }
+  }
+}

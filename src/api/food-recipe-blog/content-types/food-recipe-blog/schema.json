@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "food_recipe_blogs",
+  "info": {
+    "singularName": "food-recipe-blog",
+    "pluralName": "food-recipe-blogs",
+    "displayName": "food-recipe-blog",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "detail": {
+      "type": "richtext"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "imageSrc": {
+      "type": "string"
+    }
+  }
+}
